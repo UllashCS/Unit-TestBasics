@@ -1,0 +1,15 @@
+#ifndef DRIVER_DISTRACTION_STATUS_H
+#define DRIVER_DISTRACTION_STATUS_H
+
+typedef enum{
+    DD_STATUS__PARKING,
+    DD_STATUS__DRIVING,
+    DD_STATUS__MAX
+} DD_STATUS;
+
+#define ENABLE_DD_STATUS          10
+#define DISBALE_DD_STATUS         5
+
+DD_STATUS getDDStatus(int iSpeed);
+
+#endif  //DRIVER_DISTRACTION_STATUS_H
